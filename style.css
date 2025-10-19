@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'Estedad';
+  src: url('fonts/Estedad-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Estedad';
+  background-color: #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.unsupported-message {
+  font-family: 'Estedad';
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.header-text {
+  font-size: 48px;
+  font-family: 'Estedad';
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.logo-container {
+  background-color: #dadada;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.sub-text {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 16;
+  font-family: 'Estedad';
+  direction: rtl;
+  color: #000;
+}
+
+.instruction_text {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16;
+  font-family: 'Estedad';
+  direction: rtl;
+  color: #000;
+}
+
+.animate {
+  transition-property: transform 0.5s ease-in;
+}
+
+/* none safari iphone */
+.non_safari_pwa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Estedad';
+  align-self: stretch;
+}
+
+.text_non_safari {
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Estedad';
+  color: black;
+  font-size: 13px;
+  line-height: 15.60px;
+}
+
+.text_non_safari_bold {
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Estedad';
+  color: black;
+  font-size: 13px;
+  line-height: 15.60px;
+}
+
+
+.btn_text_non_safari {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: 'Estedad';
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+
+.safari_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+  text-align: center;
+}
+
+
+.safari-description {
+  width: 100%;
+  text-align: center;
+}
+
+.bold-text {
+  color: #1B1B1F;
+  font-size: 13px;
+  font-weight: 500;
+  direction: ltr;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.normal-text {
+  color: #1B1B1F;
+  font-size: 13px;
+  font-weight: 400;
+  direction: rtl;
+  vertical-align: middle;
+}
+
+.safari_instructions {
+  max-width: 300px;
+  height: 170px;
+  padding: 20px;
+  background: #F5F3F7;
+  border-radius: 4px;
+  border: 0.4px #DBE1FF solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.safari_step {
+  height: 50px;
+  display: flex-inline;
+  text-align: right;
+  direction: rtl;
+  align-items: center;
+}
+
+
+.button-container {
+  width: 311px;
+  height: 35px;
+  padding: 8px;
+  background: #25C37C;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex
+}
+
+.android-container {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Estedad';
+  align-self: stretch;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  background: #25C37C;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+}
+
+.modal-container {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+.download-option {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 0px;
+  gap: 10px;
+  border-bottom: 1px solid #DDE1F9;
+  cursor: pointer;
+}
+
+.download-option-no-border {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 0px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.close_div {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.desktop-container {
+  align-self: stretch;
+  padding-right: 7px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 132px;
+  display: inline-flex;
+  direction: rtl;
+}
+
+.desktop-right-container {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.desktop-icon {
+  align-self: stretch;
+  height: 128px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.desktop-bold-text {
+  text-align: right;
+  color: #1B1B1F;
+  font-size: 22px;
+  font-family: 'Estedad';
+  font-weight: 600;
+  word-wrap: break-word
+}
+
+
+.desktop-description {
+  width: 361px;
+  text-align: right;
+  color: #25C37C;
+  font-size: 16px;
+  font-family: 'Estedad';
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+.desktop-qr-code {
+  width: 393px;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  display: inline-flex
+}
+
+.qr-code-text {
+  align-self: stretch;
+  text-align: center;
+  color: #1B1B1F;
+  font-size: 14px;
+  font-family: 'Estedad';
+  font-weight: 400;
+  word-wrap: break-word
+}
+
+.app-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.logo img {
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.app_name {
+  font-weight: bold;
+  margin: 20px 0 30px;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 50px;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: center;
+}
+
+.bottom_tagline {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #808080;
+  text-align: center;
+}
+
+.footer {
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.footer img {
+  height: auto;
+}
+
+.loading-text-container {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #25C37C;
+}
+
+/* Optional: Add subtle animation for polish */
+.logo img {
+  animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
